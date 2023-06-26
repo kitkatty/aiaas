@@ -79,7 +79,7 @@ const Search = ({ results }) => {
         <title>{router.query.q} - Google Search</title>
         <link
           rel="icon"
-          href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/160px-Google_%22G%22_Logo.svg.png"
+          href="https://st2.depositphotos.com/42546960/42309/v/450/depositphotos_423098614-stock-illustration-letter-logo-design-vector-template.jpg"
         />
       </Head>
 
@@ -190,7 +190,7 @@ const Search = ({ results }) => {
 export const getServerSideProps = async (context) => {
   const startIndex = context.query.s || '0';
   const data = await fetch(
-    `https://www.googleapis.com/customsearch/v1?key=${process.env.CSE_API_KEY}&cx=${process.env.CSE_CONTEXT_KEY}&q=${context.query.q}&start=${startIndex}`
+    `https://www.googleapis.com/customsearch/v1?key=${process.env.CSE_API_KEY}&q=${context.query.q}&start=${startIndex}`
   ).then((response: Response) => response.json());
   return {
     props: { results: data }

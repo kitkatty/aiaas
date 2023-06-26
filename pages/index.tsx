@@ -37,10 +37,10 @@ export default function Home() {
   return (
     <div className="app" ref={appDiv}>
       <Head>
-        <title>Google-Clone</title>
+        <title>AIaaS Run</title>
         <link
           rel="icon"
-          href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/160px-Google_%22G%22_Logo.svg.png"
+          href="https://st2.depositphotos.com/42546960/42309/v/450/depositphotos_423098614-stock-illustration-letter-logo-design-vector-template.jpg"
         />
       </Head>
 
