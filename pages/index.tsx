@@ -88,7 +88,7 @@ export default function Home() {
               onBlur={() => searchBox.current.classList.remove('focus')}
             />
             <button type="submit">
-              <span>Search</span>
+              <span>Run</span>
               <SearchIcon className="searchIcon" />
             </button>
           </form>
